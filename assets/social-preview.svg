@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 640">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2C4A8C"/>
+      <stop offset="0.6" stop-color="#16204A"/>
+      <stop offset="1" stop-color="#0F1530"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="640" cy="250" r="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7FA8FF" stop-opacity="0.36"/>
+      <stop offset="1" stop-color="#7FA8FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD978"/>
+      <stop offset="1" stop-color="#E9A532"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#sky)"/>
+  <circle cx="640" cy="250" r="380" fill="url(#glow)"/>
+  <g fill="#FFFFFF">
+    <circle cx="140" cy="110" r="2.6" opacity="0.6"/>
+    <circle cx="300" cy="520" r="2" opacity="0.45"/>
+    <circle cx="1080" cy="90" r="2.6" opacity="0.55"/>
+    <circle cx="1160" cy="470" r="2.2" opacity="0.5"/>
+    <circle cx="960" cy="560" r="1.8" opacity="0.4"/>
+    <circle cx="210" cy="300" r="1.8" opacity="0.4"/>
+  </g>
+  <g fill="url(#gold)">
+    <path d="M1010 150 C1013 170 1018 175 1038 178 C1018 181 1013 186 1010 206 C1007 186 1002 181 982 178 C1002 175 1007 170 1010 150 Z"/>
+    <path d="M260 180 C262 191 265 194 276 196 C265 198 262 201 260 212 C258 201 255 198 244 196 C255 194 258 191 260 180 Z" opacity="0.85"/>
+  </g>
+
+  <image x="490" y="60" width="300" height="300" xlink:href="logo.png"/>
+
+  <text x="640" y="452" text-anchor="middle" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-weight="700" font-size="80" fill="#FFFFFF">BongoCat AutoClaim</text>
+  <text x="640" y="512" text-anchor="middle" font-family="Segoe UI Variable Text, Segoe UI, sans-serif" font-size="32" fill="#C9D4F5">Bongo Cat chests open themselves. No auto-clicker.</text>
+</svg>

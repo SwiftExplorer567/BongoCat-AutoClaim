@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2C4A8C"/>
+      <stop offset="1" stop-color="#0F1530"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="256" cy="330" r="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7FA8FF" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#7FA8FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFBF4"/>
+      <stop offset="1" stop-color="#EBDCC8"/>
+    </linearGradient>
+    <linearGradient id="hat" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2A3696"/>
+      <stop offset="0.55" stop-color="#3F55C9"/>
+      <stop offset="1" stop-color="#26307F"/>
+    </linearGradient>
+    <linearGradient id="brim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4560D6"/>
+      <stop offset="1" stop-color="#222B78"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD978"/>
+      <stop offset="1" stop-color="#E9A532"/>
+    </linearGradient>
+    <clipPath id="squircle">
+      <rect x="16" y="16" width="480" height="480" rx="112"/>
+    </clipPath>
+    <clipPath id="cone">
+      <path id="conePath" d="M166 258 C196 196 222 128 248 76 C256 58 276 46 300 50 C324 54 336 72 326 92 C318 84 306 82 296 90 C306 150 322 206 346 258 Z"/>
+    </clipPath>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <filter id="drop" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#050815" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <g clip-path="url(#squircle)">
+    <rect x="16" y="16" width="480" height="480" fill="url(#bg)"/>
+    <circle cx="256" cy="330" r="210" fill="url(#glow)"/>
+    <g fill="#FFFFFF">
+      <circle cx="96" cy="190" r="3" opacity="0.7"/>
+      <circle cx="420" cy="268" r="2.5" opacity="0.6"/>
+      <circle cx="150" cy="92" r="2" opacity="0.6"/>
+      <circle cx="372" cy="62" r="2" opacity="0.5"/>
+      <circle cx="446" cy="160" r="3" opacity="0.5"/>
+      <circle cx="70" cy="300" r="2" opacity="0.45"/>
+      <circle cx="210" cy="56" r="1.8" opacity="0.5"/>
+    </g>
+  </g>
+
+  <g filter="url(#drop)">
+    <!-- Ears (behind the brim) -->
+    <path d="M150 318 L136 198 C135 184 148 178 158 186 L236 256 Z" fill="url(#fur)"/>
+    <path d="M362 318 L376 198 C377 184 364 178 354 186 L276 256 Z" fill="url(#fur)"/>
+    <path d="M160 290 L153 214 C153 206 160 203 166 208 L214 252 Z" fill="#F4A3B1"/>
+    <path d="M352 290 L359 214 C359 206 352 203 346 208 L298 252 Z" fill="#F4A3B1"/>
+
+    <!-- Head -->
+    <ellipse cx="256" cy="348" rx="136" ry="108" fill="url(#fur)"/>
+
+    <!-- Brim shadow on the forehead -->
+    <ellipse cx="256" cy="282" rx="112" ry="16" fill="#3A2A1E" opacity="0.18" filter="url(#soft)"/>
+
+    <!-- Hat -->
+    <ellipse cx="256" cy="258" rx="152" ry="34" fill="url(#brim)"/>
+    <ellipse cx="256" cy="252" rx="140" ry="24" fill="#5671E0" opacity="0.35"/>
+    <use href="#conePath" fill="url(#hat)"/>
+    <g clip-path="url(#cone)">
+      <!-- light side -->
+      <path d="M248 76 C238 140 232 200 234 258 L262 258 C258 200 262 130 276 64 Z" fill="#FFFFFF" opacity="0.10"/>
+      <!-- band -->
+      <rect x="140" y="214" width="232" height="30" fill="url(#gold)"/>
+      <rect x="140" y="214" width="232" height="5" fill="#FFF1C2" opacity="0.7"/>
+      <!-- buckle -->
+      <rect x="240" y="211" width="34" height="36" rx="6" fill="none" stroke="#B8771C" stroke-width="6"/>
+    </g>
+    <!-- Stars on the hat -->
+    <path d="M262 132 l7 15 16 2 -12 11 3 16 -14 -8 -14 8 3 -16 -12 -11 16 -2 Z" fill="url(#gold)"/>
+    <path d="M222 182 l4 8 9 1 -7 6 2 9 -8 -5 -8 5 2 -9 -7 -6 9 -1 Z" fill="url(#gold)" opacity="0.9"/>
+    <path d="M300 186 a14 14 0 1 0 10 24 a11 11 0 1 1 -10 -24 Z" fill="url(#gold)" opacity="0.9"/>
+
+    <!-- Face -->
+    <g fill="none" stroke="#2B2233" stroke-linecap="round">
+      <path d="M200 352 Q218 332 236 352" stroke-width="10"/>
+      <path d="M276 352 Q294 332 312 352" stroke-width="10"/>
+      <path d="M256 384 q-7 13 -20 7" stroke-width="6"/>
+      <path d="M256 384 q7 13 20 7" stroke-width="6"/>
+    </g>
+    <path d="M246 372 h20 q4 0 1 5 l-7 7 q-4 4 -8 0 l-7 -7 q-3 -5 1 -5 Z" fill="#EE8597"/>
+    <ellipse cx="186" cy="384" rx="20" ry="12" fill="#F6A2B2" opacity="0.6"/>
+    <ellipse cx="326" cy="384" rx="20" ry="12" fill="#F6A2B2" opacity="0.6"/>
+    <g stroke="#D6C2AA" stroke-width="4" stroke-linecap="round">
+      <path d="M150 372 L104 364"/>
+      <path d="M152 390 L108 396"/>
+      <path d="M362 372 L408 364"/>
+      <path d="M360 390 L404 396"/>
+    </g>
+  </g>
+
+  <!-- Sparkles -->
+  <g fill="url(#gold)">
+    <path d="M404 98 C407 116 412 121 430 124 C412 127 407 132 404 150 C401 132 396 127 378 124 C396 121 401 116 404 98 Z"/>
+    <path d="M116 120 C118 130 121 133 131 135 C121 137 118 140 116 150 C114 140 111 137 101 135 C111 133 114 130 116 120 Z" opacity="0.85"/>
+    <path d="M430 200 C431 206 433 208 439 209 C433 210 431 212 430 218 C429 212 427 210 421 209 C427 208 429 206 430 200 Z" opacity="0.8"/>
+  </g>
+</svg>

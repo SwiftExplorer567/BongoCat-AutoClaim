@@ -1,0 +1,73 @@
+Steam guide (published): https://steamcommunity.com/sharedfiles/filedetails/?id=3843814481
+Game: Bongo Cat (AppID 3419430)
+
+Title: How to Auto-Claim Chests in Bongo Cat (No Auto-Clicker)
+Category: Gameplay Basics
+Branding image: assets/steam_guide_icon.png
+
+Description:
+Make Bongo Cat open its chests by itself when the 30-minute timer ends. No auto-clicker or macro, your mouse stays free. Free open-source app for Windows 10/11: 3-step setup, keeps working after Steam updates, one click to undo.
+
+Sections below are Steam BBCode. {img:<file>} marks where an image uploaded to the guide goes; Steam replaces it with a [previewimg] tag.
+Guide images are cropped from assets/screenshot.png.
+
+============================================================
+## What This Does
+============================================================
+{img:01_app.png}
+
+Bongo Cat gives you a chest every 30 minutes, but only if you click the popup. Miss it and the chest just waits there.
+
+[b]BongoCat AutoClaim[/b] makes the game claim the chest by itself the second the timer hits 00:00. It doesn't move your mouse or press any keys, so you can keep playing something else or working.
+
+[list]
+[*]Works for both [b]Cosmetic[/b] and [b]Emote[/b] chests
+[*]You still need 1,000 taps, same as normal
+[*]No extra chests or drops, it only claims the one you already earned
+[*]Free and open source, for Windows 10 and 11
+[/list]
+
+============================================================
+## Setup (1 Minute)
+============================================================
+[olist]
+[*]Download [b]BongoCatAutoClaim.exe[/b] from [url=https://github.com/SwiftExplorer567/BongoCat-AutoClaim/releases/latest]GitHub Releases[/url].
+[*]Run it. It finds your Bongo Cat folder, saves a backup and turns auto-claim on.
+[*]If Bongo Cat is open, press [b]Restart game[/b]. That's it.
+[/olist]
+
+{img:02_status_timers.png}
+
+When the top card says [b]Auto-claim is on[/b], it's working. The rings count down to your next chests.
+
+============================================================
+## Steam Updates & Undo
+============================================================
+{img:03_settings.png}
+
+[b]After a game update:[/b] Steam replaces the game file and the patch is gone. Keep [i]Re-patch after Steam updates[/i] on and the app puts it back from the system tray. Nothing to do on your side.
+
+[b]Want the original game back?[/b] Click [b]Restore original[/b]. Verifying game files in Steam does the same.
+
+============================================================
+## FAQ
+============================================================
+[b]Windows or my antivirus shows a warning.[/b]
+The exe isn't code-signed, so SmartScreen may say "unknown publisher". The full source is on GitHub, and you can build it yourself.
+
+[b]Why is the download about 90 MB?[/b]
+Everything it needs is inside, so you don't have to install .NET or anything else.
+
+[b]Does it change anything else in the game?[/b]
+No. It only changes what happens when a chest becomes ready. Taps are spent exactly like a manual click.
+
+[b]Is it safe for my account?[/b]
+It only changes a local game file, but it's still a modification. Use it at your own risk.
+
+[b]Links[/b]
+[list]
+[*][url=https://github.com/SwiftExplorer567/BongoCat-AutoClaim]Source code on GitHub[/url]
+[*][url=https://github.com/SwiftExplorer567/BongoCat-AutoClaim/releases/latest]Latest download[/url]
+[/list]
+
+Questions or a bug after an update? Leave a comment.
